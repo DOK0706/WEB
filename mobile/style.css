@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 공통영역 */
+{margin: 0; padding: 0; box-sizing: border-box;}
+:link, :visited{color: inherit; text-decoration: none;}
+nav ul{list-style: none;}
+html, body{scroll-behavior: smooth; height: 100%;}
+
+#slide img{width: 100%;}
+
+/* 스마트폰 사이즈 */
+@media screen and (max-width:767px){
+    #wrap{padding: 8px;}
+    header{height: 70px;}
+    #logo{padding: 10px; text-align: center;}
+    .bar{float: left; font-size: 2em; padding: 10px;}
+    header>nav{position: fixed; width: 80%; background-color: rgba(11, 11, 192, 0.65); top: 0; height: 100%; overflow: auto; left: -80%;}
+    .close{float: right; font-size: 1.8em; color: white; padding: 10px;}
+    #gnb>li{padding-left: 20px;}
+    #gnb>li>a{display: block; font-size: 1.2em; color: white; padding: 8px 0;}
+    .submenu{padding-left: 10px;}
+    .submenu>li>a{display: block; padding: 8px 0; color: white;}
+}
+
+/* 테블릿 사이즈 */
+@media screen and (min-width:768px) and (max-width:1024) and (origin:landscape){
+
+}
+
+/* PC 및 노트북 */
+@media screen and (min-width:1025px){
+
+}

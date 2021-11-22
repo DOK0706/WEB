@@ -1,0 +1,308 @@
+<head>
+    <meta charset="UTF-8">
+    <title>율제병원</title>
+    <link rel="stylesheet" href="css\base.css" type="text/css"/>
+    <script type="text/javascript" src="js\jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js\slide.js"></script>
+    <script type="text/javascript" src="js\common.js"></script>
+    <script type="text/javascript" src="js\jquery.slides.js"></script>
+    <script type="text/javascript">
+        var slider = null;
+        $(document).ready(function () {
+            if ($('#bg img').length > 1) {
+                slider = $('#bg').slidesjs({
+                    width: 370,
+                    height: 800,
+                    play: {
+                        active: false,
+                        auto: true,
+                        effect: "fade"
+                    },
+                    effect: {
+                        fade: {
+                            speed: 1000
+                        }
+                    },
+                    navigation: {
+                        active: false
+                    },
+                    pagination: {
+                        active: true
+                    }
+                });
+            } else {
+                $("#bg").css({display: 'block'});
+            }
+            if ($('#popup2 img').length > 1) {
+                slider2 = $('#popup2').slidesjs({
+                    width: 400,
+                    height: 200,
+                    play: {
+                        active: true,
+                        auto: true,
+                        effect: "fade"
+                    },
+                    effect: {
+                        fade: {
+                            speed: 1000
+                        }
+                    },
+                    navigation: {
+                        active: false
+                    },
+                    pagination: {
+                        active: true
+                    }
+
+                });
+            } else {
+                $("#popup2").css({display: 'block'});
+            }
+            if ($('#popup3 img').length > 1) {
+                slider3 = $('#popup3').slidesjs({
+                    width: 200,
+                    height: 400,
+                    play: {
+                        active: true,
+                        auto: true,
+                        effect: "fade"
+                    },
+                    effect: {
+                        fade: {
+                            speed: 1000
+                        }
+                    },
+                    navigation: {
+                        active: false
+                    },
+                    pagination: {
+                        active: true
+                    }
+                });
+            } else {
+                $("#popup3").css({display: 'block'});
+            }
+
+            $('.slidesjs-pagination-item a').click(function () {
+                $('a.slidesjs-play').click();
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+<div id="wrap" class="main">
+    <!-- header -->
+    <div id="header">
+        <div class="header_box">
+            <div class="header_in" id="gnb">
+                <a href="main.html">
+                    <img src="images\mainicon.png" width="250" height="55"></a>
+                <ul id="tnb" class="gnb_wrap">
+                    <li class="tm01"><a class="depth01">진료과</a>
+                        <ul class="subMenu first">
+                            <li><a>가정의학과</a></li>
+                            <li><a>감염내과</a></li>
+                            <li><a>건진의학과</a></li>
+                            <li><a>관절류마티스내과</a></li>
+                            <li><a>구강악안면외과</a></li>
+                            <li><a>내분비내과</a></li>
+                            <li><a>마취통증의학과</a></li>
+                            <li><a>더보기</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="tm02"><a class="depth01">센터</a>
+                        <ul class="subMenu">
+                            <li><a>갑상선센터</a></li>
+                            <li><a>관절·척추센터</a></li>
+                            <li><a>뇌졸중센터</a></li>
+                            <li><a>로봇수술센터</a></li>
+                            <li><a>모아센터</a></li>
+                            <li><a>무릎스포츠의학센터</a></li>
+                            <li><a>소화기센터</a></li>
+                            <li><a>더보기</a></li>
+                        </ul>
+                    </li>
+                    <li class="tm03"><a class="depth01">이용안내</a>
+                        <ul class="subMenu">
+                            <li><a>진료안내</a></li>
+                            <li><a>위치안내</a></li>
+                            <li><a>국가건강검진</a></li>
+                            <li><a>입원/퇴원 안내</a></li>
+                            <li><a>응급진료 안내</a></li>
+                            <li><a>신청/발급 안내</a></li>
+                            <li><a>병문안 안내</a></li>
+                            <li><a>더보기</a></li>
+                        </ul>
+                    </li>
+                    <li class="tm04"><a class="depth01">고객서비스</a>
+                        <ul class="subMenu">
+                            <li><a>이용안내</a></li>
+                            <li><a>고맙습니다</a></li>
+                            <li><a>건의합니다</a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                        </ul>
+                    </li>
+                    <li class="tm05"><a class="depth01">건강정보</a>
+                        <ul class="subMenu">
+                            <li><a>건강강좌</a></li>
+                            <li><a>질환/수술/검사정보</a></li>
+                            <li><a>건강이야기</a></li>
+                            <li><a>건강동영상</a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                        </ul>
+                    </li>
+                    <li class="tm06"><a class="depth01">병원소개</a>
+                        <ul class="subMenu">
+                            <li><a href="sub2.html">이사장 인사말</a></li>
+                            <li><a>병원 둘러보기</a></li>
+                            <li><a>미션과 비전</a></li>
+                            <li><a>연혁</a></li>
+                            <li><a>병원소식</a></li>
+                            <li><a>홍보동영상</a></li>
+                            <li><a>진료지원부서</a></li>
+                            <li><a>발전기금</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- // header-->
+
+    <div id="container" class="type1">
+        <div id="mainbox">
+            <div id="mleft">
+                <div class="mleft_in">
+                    <div class="mcont0">
+                        <a href="sub2.html">이사장 인사말</a>
+                    </div>
+                    <div class="mcont1">
+                        <a>병원 둘러보기</a>
+                    </div>
+                    <div class="mcont2">
+                        <a>온라인 증명서 발급</a>
+                    </div>
+                    <div class="mcont3">
+                        <h2>율제소식</h2>
+                        <ul>
+                            <li><a>비만수술클리닉 개소, 다학제팀 운영으로 수술 위험성 낮추고 안정성 높여</a><span class="date">2021.08.27</span></li>
+
+                            <li><a>신경외과 채송화 교수, SCI 논문 게재</a><span class="date">2021.08.23</span></li>
+
+                            <li><a>간암 적정성 평가 만점! 4년 연속 1등급</a><span class="date">2021.07.16</span></li>
+
+                            <li><a>안정원 소아청소년과 교수, 세계소아소화기영양학회 젊은 연구자상 수상</a><span class="date">2021.07.05</span></li>
+
+                        </ul>
+                        <a class="more">MORE +</a>
+                    </div>
+                    <div class="mcont4">
+                        <ul>
+                            <li><a>언론보도</a></li>
+                            <li><a>보도자료</a></li>
+                            <li><a>공지사항</a></li>
+                            <li><a>채용공고</a></li>
+                        </ul>
+                        <p class="clear padT10">
+                            <a><img src="images\bigicon_facebook.png" alt="페이스북"/></a>
+                            <a><img src="images\bigicon_instagram.png" alt="인스타그램"/></a>
+                            <a><img src="images\bigicon_youtube.png" alt="유튜브"/></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="visual_bg">
+                <div id="bg">
+                    <!-- 메인배너 -->
+                    <img src="images/slide1.jpg">
+                    <img src="images/slide2.jpg">
+                    <img src="images/slide3.jpg">
+                </div>
+            </div>
+            <div id="mright">
+                <div class="right1">
+                    <div class="mcont5">
+                        <a>첫 방문/빠른예약<span class="desc">전문 상담사가<br/>빠른 에약을 도와드립니다</span></a>
+                    </div>
+                    <div class="mcont6">
+                        <a>온라인 진료예약<span class="desc">온라인으로 쉽고 빠르게<br/>진료예약 및 조회를 하실 수 있습니다.</span></a>
+                    </div>
+                    <div class="mcont7">
+                        <a>온라인 증명서 발급<span class="desc">온라인으로 증명서를<br/>발급 받으실 수 있습니다.</span></a>
+                    </div>
+                    <div id="popupWrap">
+                        <h2>POPUPZONE</h2>
+                        <div id="popup2" class="m_pop">
+                            <img src="images/slide5.png">
+                            <img src="images/slide6.png">
+                            <img src="images/slide7.png">
+                        </div>
+                    </div>
+                    <div class="mcont8">
+                        <a href="sub3.html">외래진료 예약</a>
+                    </div>
+                    <div class="mcont9">
+                        <a href="sub1.html">찾아오시는 길</a>
+                    </div>
+                </div>
+                <div id="popup">
+                    <div id="popup3" class="m_pop">
+                        <img src="images/jungseok.png">
+                        <img src="images/kyungho.png">
+                        <img src="images/mido.png">
+                        <img src="images/daemyung.png">
+                        <img src="images/yeonseok.png">
+                    </div>
+                </div>
+                <div class="mcont10">
+                    <ul>
+                        <li><a>전문진료센터</a></li>
+                        <li><a>건강증진센터</a></li>
+                        <li><a>진료협력센터</a></li>
+                        <li><a>당뇨센터</a></li>
+                    </ul>
+                </div>
+                <div class="mcont12">
+                    <ul>
+                        <li><a>통합콜센터<br/>1899-0001</a></li>
+                        <li><a>전화번호안내</a></li>
+                        <li><a>증명서<br/>발급안내</a></li>
+                    </ul>
+                </div>
+                <!--왼쪽배너 E-->
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer_box">
+            <div class="link">
+                <li>비급여진료비</li>
+                <li>이용약관</li>
+                <li>환자의 권리와 의무</li>
+                <li>개인정보 처리방침</li>
+            </div>
+            <div class="call">
+                <li>대표번호 : 1522.7000</li>
+            </div>
+
+            <address>
+                (07804) 서울특별시 강서구 공항대로 260
+            </address>
+            <p class="copyright">Copyright (c) YULJE Medical Center. All rights reserved.</p>
+        </div>
+    </div>
+    <!-- footer //-->
+</div>
+</body>

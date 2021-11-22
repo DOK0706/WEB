@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "한수원 한돋움", "NanumGothic";
+}
+
+body {
+    font-size: 14px;
+    color: #555;
+    line-height: 20px;
+    position: relative;
+    word-break: keep-all;
+    letter-spacing: -0.05em;
+}
+
+table, div {
+    border-collapse: collapse;
+}
+
+form, ul, ol, dl, table, div, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+img, fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    vertical-align: top;
+}
+
+select, input, img, label {
+    vertical-align: middle;
+}
+
+input {
+    padding: 0 0 0 4px;
+}
+
+ul, li, dl, dt, dd {
+    list-style-type: none;
+}
+
+caption {
+    text-indent: -5000px;
+    line-height: 0;
+    font-size: 0;
+}
+
+legend {
+    text-indent: -5000px;
+    line-height: 0;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+hr {
+    display: none;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    min-height: 74px;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 30;
+}
+
+#header .header_box {
+    width: 1200px;
+    height: 74px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header.header_main .header_box {
+    min-width: 1200px !important;
+    max-width: 1400px !important;
+    width: auto !important;
+}
+
+#header .header_in {
+    height: 74px;
+    z-index: 80;
+    position: relative;
+}
+
+#header .header_in h1 {
+    float: left;
+    margin: 23px 0 0;
+}
+
+#gnb .gnb_wrap {
+    position: absolute;
+    left: 270px;
+    top: 0;;
+    width: 1000px;
+    height: 74px;
+    margin: 0 auto;
+}
+
+#gnb .gnb_wrap {
+    float: left;
+}
+
+#gnb .gnb_wrap li {
+    float: left;
+    width: 150px;
+    height: 74px;
+    line-height: 74px;
+    vertical-align: middle;
+    background: url(../images/bg_gnb_bar.png) no-repeat 0 27px;
+}
+
+#gnb .gnb_wrap li a {
+    display: block;
+    width: 185px;
+    height: 74px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #525252;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+#gnb .gnb_wrap li:first-child {
+    background: none;
+}
+
+#gnb .gnb_wrap li a.depth01_on, #gnb.gnb_wrap li a:focus, #gnb.gnb_wrap li a:hover {
+    color: #009c93
+}
+
+
+#gnb .gnb_wrap li ul.first {
+    border-left: 0 none
+}
+
+#gnb .gnb_wrap li ul li {
+    width: 140px;
+    height: 20px;
+    margin: 5px 0 20px;
+    line-height: 20px;
+    float: none
+}
+
+#gnb .gnb_wrap li ul li a {
+    width: 140px;
+    height: 20px;
+    font-size: 16px;
+    color: #666;
+    display: block;
+    text-align: center;
+}
+
+#gnb .gnb_wrap li ul li a:hover, #gnb .gnb_wrap li ul li a:focus, #gnb .gnb_wrap li a:hover, #gnb .gnb_wrap li a:focus {
+    color: #009c93;
+    font-weight: 600;
+}
+
+.gnblink {
+    display: none;
+    height: 340px;
+    width: 500px;
+    left: 230px;
+    top: 74px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 4;
+}
+
+.gnblink a {
+    display: block;
+    width: 160px;
+    height: 110px;
+    padding-top: 60px;
+    padding-left: 70px;
+    font-size: 19px;
+    color: #444444;
+    font-weight: 600;
+    text-align: center;
+}
+
+.subMenu {
+    background: rgba(220, 226, 240, .75);
+}
+
+#main .title {
+    position: absolute;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 250px;
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.form {
+    padding-top: 100px;
+    padding-left: 600px;
+    padding-bottom: 100px;
+}
+
+
+#footer {
+    width: 100%;
+    height: 150px;
+    font-size: 14px;
+    line-height: 80px;
+    background: #323c4d;
+}
+
+#footer .call {
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #20a190
+}
+
+#footer .footer_main {
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #a3a3a3
+}
+
+#footer .footer_box {
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #a3a3a3
+}
+
+#footer .footer_box .link {
+    position: absolute;
+    top: -15px;
+}
+
+#footer .footer_box .link li {
+    float: left;
+    margin-left: 30px;
+}
+
+#footer .footer_box .link li:first-child {
+    margin-left: 0;
+}
+
+#footer .footer_box .call {
+    position: absolute;
+    top: 15px;
+}
+
+#footer .footer_box address {
+    position: absolute;
+    top: 50px;
+    font-style: normal;
+}
+
+#footer .footer_box .copyright {
+    position: absolute;
+    top: 70px;
+}
